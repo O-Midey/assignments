@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+}
+
+:root {
+  --xsm-fs: 12px;
+  --sm-fs: 14px;
+  --md-fs: 16px;
+  --lg-fs: 18px;
+  --xlg-fs: 20px;
+}
+
+body {
+  justify-content: center;
+}
+
+h1 {
+  line-height: 2;
+  font-size: clamp(1.2em, 2vw, 40px);
+}
+
+p {
+  font-size: clamp(12px, 2vw, 16px);
+  font-weight: 400;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: block;
+  margin: auto auto;
+  max-width: max(40%,350px);
+  padding: 30px;
+  box-shadow: 0px 1px 24px -4px rgba(0, 0, 0, 0.29);
+}
+
+main.log-in{
+  height: 100vh;
+}
+
+div.google-option {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1%;
+  padding: 5px;
+  border: 1px solid #dedede;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+div.google-option p {
+  font-size: clamp(12px, 2vw, 16px);
+}
+
+.or {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button,
+.button {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover,
+.button:hover {
+  opacity: 0.7;
+}
+
+input,
+button {
+  display: block;
+  width: 100%;
+  font-family: "Poppins";
+  margin: 20px 0;
+  padding: 10px;
+}
+
+button {
+  border-radius: 7px;
+  margin-top: 30px;
+  background-color: #333333;
+  border: none;
+}
+
+a button {
+  text-decoration: none !important;
+  color: white;
+  width: 100%;
+}
+input {
+  border: none;
+  border-bottom: 1px solid #dedede;
+  padding-left: 0;
+  transition: 0.19s ease-in;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #595959;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+a.underlined--link {
+  text-decoration: underline;
+}
+
+span a {
+  color: #a6a6a6;
+  transition: 0.3s;
+
+}
+
+span a:hover{
+  color: black;
+}
+
+select{
+  font-family: "Poppins";
+  padding: 5px 10px;
+}
+
+label[for="birthday"]{
+  display: block;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 500px) {
+  main{box-shadow: none;}
+}
